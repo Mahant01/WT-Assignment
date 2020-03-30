@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function myFunction() {
+  		var x = document.getElementById("fname");
+  		x.value = x.value.toUpperCase();
+  		}
+	</script>
+</head>
+<body>
+	<center>
+		<h1>FORM</h1>
+	<form id="usrform">
+		Name:<input type="text" name="name"  placeholder="Enter your nickname" required="*" id="fname" onblur="myFunction()"><br><br>
+		Age:<br><input type="radio" id="male" name="gender" value="Above 18" required="#">
+		<label for="male">Above 18</label><br>
+		<input type="radio" id="male1" name="gender" value="Above 18" required="#">
+		<label for="male1">Below 18</label><br><br>
+		Phone Number:<input type="tel" name="Numb" placeholder="Enter your number" required="*"><br><br>
+		Email-ID:<input type="email" name="num" placeholder="Enter your Email-ID"><br><br>
+		<textarea rows="5" cols="50" name="comment" form="usrform" placeholder="Enter address here..."></textarea><br><br>
+		<label for="btec">Choose the Field:</label>
+		<select id="btec" name="btec">
+			<option value="ce">Computer Engineering</option>
+			<option value="it">IT</option>
+			<option value="me">Mechanical Engineering</option>
+			<option value="other">Other</option>
+		</select><br><br>
+		<button type="button" value="Submit">Done!</button>
+
+	</form>
+	</center>
+</body>
+</html>
